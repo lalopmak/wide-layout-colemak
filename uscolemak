@@ -84,7 +84,7 @@ xkb_symbols "intl" {
 partial alphanumeric_keys
 xkb_symbols "colemak" {
     include "us"
-    name[Group1]= "USA - Colemak";
+    name[Group1]= "English (Colemak)";
 
     // number row
     key <TLDE> { [        grave,   asciitilde,      dead_tilde,       asciitilde ] };
