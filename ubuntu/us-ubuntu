@@ -139,9 +139,9 @@ xkb_symbols "intl" {
     key <SPCE> { [        space,        space,           space,     nobreakspace ] };
 
 
-    key <ESC> { [     CapsLock,     CapsLock,        CapsLock,         CapsLock ] };
-    key <CAPS> { [    Control_L,    Control_L,       Control_L,        Control_L ] };
-    key <LCTL> { [    Escape,       Escape,          Control_L,           Escape ] };
+    //key <ESC> { [     CapsLock,     CapsLock,        CapsLock,         CapsLock ] };
+    //key <CAPS> { [    Control_L,    Control_L,       Control_L,        Control_L ] };
+    //key <LCTL> { [    Escape,       Escape,          Control_L,           Escape ] };
 
     include "level3(ralt_switch)"
 };
