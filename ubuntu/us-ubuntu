@@ -780,8 +780,8 @@ xkb_symbols "colemak" {
     //first row wide mods: shifted by 1
     key <AD07> { [            j,            J,         dstroke,          Dstroke ] };
     key <AD08> { [            l,            L,         lstroke,          Lstroke ] };
-    key <AD09> { [            u,            U,          at,           Up ] };
-    key <AD10> { [            y,            Y,      Escape,       Return ] };
+    key <AD09> { [            u,            U,          dollar,           dollar ] };
+    key <AD10> { [            y,            Y,      at,       at ] };
     key <AD11> { [    semicolon,        colon,      apostrophe,           quotedbl ] };
     key <AD12> { [  apostrophe,    quotedbl,   question,        question ] }; //{ [  Return,    Return,   Return,        Return ] };
     key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] };
