@@ -113,8 +113,8 @@ xkb_symbols "colemak" {
     //first row wide mods: shifted by 1
     key <AD07> { [            j,            J,         dstroke,          Dstroke ] };
     key <AD08> { [            l,            L,         lstroke,          Lstroke ] };
-    key <AD09> { [            u,            U,          at,           Up ] };
-    key <AD10> { [            y,            Y,      Escape,       Return ] };
+    key <AD09> { [            u,            U,          dollar,           dollar ] };
+    key <AD10> { [            y,            Y,      at,       at ] };
     key <AD11> { [    semicolon,        colon,      apostrophe,           quotedbl ] };
     key <AD12> { [  apostrophe,    quotedbl,   question,        question ] }; //{ [  Return,    Return,   Return,        Return ] };
     key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] };
@@ -133,7 +133,7 @@ xkb_symbols "colemak" {
     key <AC09> { [            e,            E,      minus,       numbersign          ] };
     key <AC10> { [            i,            I,      plus,        asterisk    ] };
     key <AC11> { [            o,            O,      underscore,        asciicircum    ] };
-    key <AC06> { [ backslash,   braceright,  guillemotright,        0x100203a ] };
+    key <AC06> { [ backslash,   bar,  guillemotright,        0x100203a ] };
 
     //key <RTRN> { [  apostrophe,    quotedbl,   question,        question ] };
 
@@ -154,9 +154,10 @@ xkb_symbols "colemak" {
     key <LSGT> { [        minus,   underscore,          endash,           emdash ] };
     key <SPCE> { [        space,        space,           space,     nobreakspace ] };
 
-    // key <ESC> { [     CapsLock,     CapsLock,        CapsLock,         CapsLock ] };
-    // key <CAPS> { [    Control_L,    Control_L,       Control_L,        Control_L ] };
-    // key <LCTL> { [    Escape,       Escape,          Control_L,           Escape ] };
+    //doesn't work in ubuntu; modify evdev instead
+    //key <ESC> { [     CapsLock,     CapsLock,        CapsLock,         CapsLock ] };
+    //key <CAPS> { [    Control_L,    Control_L,       Control_L,        Control_L ] };
+    //key <LCTL> { [    Escape,       Escape,          Control_L,           Escape ] };
 
 
     include "level3(ralt_switch)"
