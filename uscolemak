@@ -141,8 +141,8 @@ xkb_symbols "colemak" {
     key <AB01> { [            z,            Z,      slash,               slash ] };
     key <AB02> { [            x,            X,      backslash,       asciitilde ] };
     key <AB03> { [            c,            C,      braceleft,        braceleft         ] };
-    key <AB04> { [            v,            V,      braceright,               braceright ] };
-    key <AB05> { [            b,            B,      dead_breve,       asciitilde ] };
+    key <AB04> { [            v,            V,      braceleft,        braceleft ] };
+    key <AB05> { [            b,            B,      braceright,       braceright ] };
 
     //third row wide mods: shifted by 1
     key <AB07> { [            k,            K,  dead_abovering,       asciitilde ] };
