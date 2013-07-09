@@ -1,7 +1,7 @@
 wide-layout-colemak
 ===================
 
-A wide layout /usr/share/X11/xkb/symbols/us
+Colemak, wide-layout related changes for /usr/share/X11/xkb/symbols/us, /usr/share/X11/xkb/keycodes/evdev
 
 Disclaimer
 -----
