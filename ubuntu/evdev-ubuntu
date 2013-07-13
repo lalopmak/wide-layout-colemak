@@ -22,7 +22,7 @@ default xkb_keycodes "evdev" {
 	<AE12> = 21;
 	<BKSP> = 22;
 
-	<TAB> = 23;
+	<TAB> = 37;   //23 by default
 	<AD01> = 24;
 	<AD02> = 25;
 	<AD03> = 26;
@@ -76,7 +76,7 @@ default xkb_keycodes "evdev" {
 	<COMP> = 135;
 	alias <MENU> = <COMP>;
 
-	<ESC> = 37;  //9 by default
+	<ESC> = 23;  //9 by default
 	<FK01> = 67;
 	<FK02> = 68;
 	<FK03> = 69;
