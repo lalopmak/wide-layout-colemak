@@ -785,7 +785,7 @@ xkb_symbols "colemak" {
     key <AD11> { [    semicolon,        colon,      apostrophe,           quotedbl ] };
     key <AD12> { [  apostrophe,    quotedbl,   question,        question ] }; //{ [  Return,    Return,   Return,        Return ] };
     key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] };
-    key <AD06> { [   exclam,     braceleft,          otilde,           Otilde ] };
+    key <AD06> { [   Tab,     Tab,          Tab,           Tab ] };
 
     //second row
     key <AC01> { [            a,            A,      Left,           Aacute ] };
