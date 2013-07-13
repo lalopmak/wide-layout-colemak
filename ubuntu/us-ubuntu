@@ -800,14 +800,14 @@ xkb_symbols "colemak" {
     key <AC09> { [            e,            E,      minus,       numbersign          ] };
     key <AC10> { [            i,            I,      plus,        asterisk    ] };
     key <AC11> { [            o,            O,      underscore,        asciicircum    ] };
-    key <AC06> { [ backslash,   bar,  guillemotright,        0x100203a ] };
+    key <AC06> { [            Tab,          Tab,    guillemotright,        0x100203a ] };
 
     //key <RTRN> { [  apostrophe,    quotedbl,   question,        question ] };
 
     //third row
     key <AB01> { [            z,            Z,      slash,               slash ] };
     key <AB02> { [            x,            X,      backslash,       asciitilde ] };
-    key <AB03> { [            c,            C,      braceleft,        braceleft  ] };
+    key <AB03> { [            c,            C,      Tab,          Tab  ] };
     key <AB04> { [            v,            V,      bracketright,        bracketright ] };
     key <AB05> { [            b,            B,      bracketleft,       bracketleft ] };
 
