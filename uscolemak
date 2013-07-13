@@ -107,8 +107,8 @@ xkb_symbols "colemak" {
     key <AD01> { [            q,            Q,      Delete, Delete ]  };
     key <AD02> { [            w,            W,           Up,       asciitilde  ] };
     key <AD03> { [            f,            F,           BackSpace,       BackSpace ] };
-    key <AD04> { [            p,            P,     parenleft,         asciicircum     ] };
-    key <AD05> { [            g,            G,     grave, grave ] };
+    key <AD04> { [            p,            P,     braceright,         asciicircum     ] };
+    key <AD05> { [            g,            G,     braceleft, grave ] };
 
     //first row wide mods: shifted by 1
     key <AD07> { [            j,            J,         dstroke,          Dstroke ] };
@@ -118,14 +118,14 @@ xkb_symbols "colemak" {
     key <AD11> { [    semicolon,        colon,      apostrophe,           quotedbl ] };
     key <AD12> { [  apostrophe,    quotedbl,   question,        question ] }; //{ [  Return,    Return,   Return,        Return ] };
     key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] };
-    key <AD06> { [   exclam,     braceleft,          otilde,           Otilde ] };
+    key <AD06> { [   Tab,     Tab,          Tab,           Tab ] };
 
     //second row
     key <AC01> { [            a,            A,      Left,           Aacute ] };
     key <AC02> { [            r,            R,      Down,            bracketleft ] };
     key <AC03> { [            s,            S,      Right,      bracketright  ] };
-    key <AC04> { [            t,            T,     Escape  , Escape ] };
-    key <AC05> { [            d,            D,      parenright , Return ] };
+    key <AC04> { [            t,            T,      parenright  , parenright   ] };
+    key <AC05> { [            d,            D,      parenleft , parenleft    ] };
 
     //second row wide mods: shifted by 1
     key <AC07> { [            h,            H,      ampersand,   asciitilde ] };
@@ -133,16 +133,16 @@ xkb_symbols "colemak" {
     key <AC09> { [            e,            E,      minus,       numbersign          ] };
     key <AC10> { [            i,            I,      plus,        asterisk    ] };
     key <AC11> { [            o,            O,      underscore,        asciicircum    ] };
-    key <AC06> { [ backslash,   bar,  guillemotright,        0x100203a ] };
+    key <AC06> { [            Tab,          Tab,    guillemotright,        0x100203a ] };
 
     //key <RTRN> { [  apostrophe,    quotedbl,   question,        question ] };
 
     //third row
     key <AB01> { [            z,            Z,      slash,               slash ] };
     key <AB02> { [            x,            X,      backslash,       asciitilde ] };
-    key <AB03> { [            c,            C,      braceleft,        braceleft         ] };
-    key <AB04> { [            v,            V,      braceleft,        braceleft ] };
-    key <AB05> { [            b,            B,      braceright,       braceright ] };
+    key <AB03> { [            c,            C,      Tab,          Tab  ] };
+    key <AB04> { [            v,            V,      bracketright,        bracketright ] };
+    key <AB05> { [            b,            B,      bracketleft,       bracketleft ] };
 
     //third row wide mods: shifted by 1
     key <AB07> { [            k,            K,  dead_abovering,       asciitilde ] };
