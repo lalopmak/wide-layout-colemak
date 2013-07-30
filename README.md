@@ -4,7 +4,7 @@ wide-layout-colemak
 My personal colemak, wide-layout related changes for /usr/share/X11/xkb/symbols/us, /usr/share/X11/xkb/keycodes/evdev
 
 Attempted Description
-===================
+-----
 Note that I am not an expert, and my understanding of this may be inaccurate.  To my knowledge:
 
 
@@ -29,7 +29,7 @@ Note: Because modifying evdev changes the scancode interpretation regardless of 
 
 
 Disclaimer
-===================
+-----
 THIS SOFTWARE, ANY ASSOCIATED FILES, AND ANY ASSOCIATED DOCUMENTATION 
 ARE PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS", 
 WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
