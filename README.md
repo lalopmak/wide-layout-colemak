@@ -14,7 +14,7 @@ keypress -> scancode -> keycode -> symbol
 
 Example:
 
-On my keyboard, when the A button is pressed, the scancode 38 is sent.  The /usr/share/X11/xkb/keycodes/evdev line:
+On my keyboard, when the A button is pressed, the scancode 38 is sent.  The evdev line:
 
     <AC01> = 38;
 
