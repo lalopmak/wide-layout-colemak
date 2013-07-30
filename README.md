@@ -12,6 +12,8 @@ When a key is pressed, the keyboard sends an evdev scancode.  The file /usr/shar
 
 keypress -> scancode -> keycode -> symbol
 
+These may be called different things in the xkb documentation.  As far as I can tell, what I call "scancodes" are also called "keycodes", what I call "keycodes" also "symbol codes/symbolic key names/symbols"... it's pretty confusing.
+
 Example:
 
 On my keyboard, when the A button is pressed, the scancode 38 is sent.  The evdev line:
