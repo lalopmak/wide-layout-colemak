@@ -14,7 +14,7 @@ keypress -> scancode -> keycode -> symbol
 
 Example:
 
-On my keyboard, when the A button is pressed, the scancode 38 is sent.  The evdev line:
+On my keyboard, when the A button is pressed, the scancode 38 is sent.  The /usr/share/X11/xkb/keycodes/evdev line:
 
     <AC01> = 38;
 
@@ -22,7 +22,7 @@ tells xkb to interpret that as the <AC01> keycode.  This is then mapped to a sym
 
     key <AC01> { [            a,            A,          Left,           Aacute ] };
 
-tells xkb to generate one of those symbols, depending on the modifier(s) being pressed.  In this case, the symbol "a" results with no modifier, "A" with shift, "Left" with AltGr, and "Aacute" with AltGr+Shift.
+tells xkb to generate one of those symbols, depending on the modifier(s) being pressed.  In this case, the symbol "a" results with no modifier, "A" with Shift, "Left" with AltGr, and "Aacute" with AltGr+Shift.
 
 
 Note: Because modifying evdev changes the scancode interpretation regardless of layout, doing so is generally more inconvenient and risky than working with the xkb symbols.  Thus, changing evdev should be avoided whenever possible.  I only change mine if xkb gives me issues or bad side-effects when changing symbols (in my case, with ctrl or tab).
