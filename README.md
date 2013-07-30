@@ -1,7 +1,32 @@
 wide-layout-colemak
 ===================
 
-Colemak, wide-layout related changes for /usr/share/X11/xkb/symbols/us, /usr/share/X11/xkb/keycodes/evdev
+My personal colemak, wide-layout related changes for /usr/share/X11/xkb/symbols/us, /usr/share/X11/xkb/keycodes/evdev
+
+Attempted Description
+-----
+Note that I am not an expert, and my understanding of this may be inaccurate.  To my knowledge:
+
+
+When a key is pressed, the keyboard sends an evdev scancode.  The file /usr/share/X11/xkb/keycodes/evdev tells how to convert from scancode to xkb keycode.  That keycode is then converted to a symbol according to /usr/share/X11/xkb/symbols/, depending on which language and layout is being used.  Thus, we have:
+
+keypress -> scancode -> keycode -> symbol
+
+Example:
+
+On my keyboard, it seems that when the A button is pressed, the scancode 38 is sent.  The evdev line:
+
+    <AC01> = 38;
+
+tells xkb to interpret that as the <AC01> keycode.  This is then mapped to a symbol in one of our files/layouts.  For example, if I am using my customized colemak layout in /usr/share/X11/xkb/symbols/us, the line 
+
+    key <AC01> { [            a,            A,          Left,           Aacute ] };
+
+tells us that <AC01> should generate one of those symbols, depending on the modifier(s) being pressed.  In particular, the symbol "a" results with no modifier, "A" with shift, "Left" with AltGr, and "Aacute" with AltGr+Shift.
+
+
+Note: Because modifying evdev changes the scancode interpretation regardless of layout, doing so is generally more inconvenient and risky than working with the xkb symbols.  Thus, changing evdev should be avoided whenever possible.  I only change mine if xkb gives me issues or bad side-effects when changing symbols (in my case, with ctrl or tab).
+
 
 Disclaimer
 -----
