@@ -1,0 +1,88 @@
+
+// Widely Alternating A (comma-preserving)
+// Forum thread: 
+
+//NB: This is copied and pasted over an existing layout
+
+// Disclaimer
+// -----
+// THIS SOFTWARE, ANY ASSOCIATED FILES, AND ANY ASSOCIATED DOCUMENTATION 
+// ARE PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS", 
+// WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
+// LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+// PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT OWNER OR 
+// CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+// EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+// PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+// PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+// LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+// NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+// SOFTWARE, ANY ASSOCIATED FILES, OR ANY ASSOCIATED DOCUMENTATION, EVEN 
+// IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+partial alphanumeric_keys
+xkb_symbols "dvorak-l" {
+
+    include "us(dvorak)"
+    name[Group1]= "English (left handed Dvorak)";
+
+    key <TLDE> { [asciitilde, less,         grave,       asciitilde ] };
+
+    key <AE01> { [	   1,     asterisk,    exclamdown,      onesuperior ] };
+    key <AE02> { [	   2,         bracketleft,   twosuperior, dead_doubleacute ] };
+    key <AE03> { [	   3, bracketright, threesuperior,      dead_macron ] };
+    key <AE04> { [	   4,     dollar,      currency,         sterling ] };
+    key <AE05> { [	   5,    greater,      EuroSign,     dead_cedilla ] };
+    key <AE06> { [    6, asciicircum,    onequarter,      asciicircum ] };
+    key <AE07> { [	   7,  bar,       onehalf,	dead_horn ] };
+    key <AE08> { [	   8,   at, threequarters,      dead_ogonek ] };
+    key <AE09> { [	   9,  plus, leftsinglequotemark, dead_breve ] };
+    key <AE10> { [	   0, equal, rightsinglequotemark, dead_abovering ] };
+    key <AE11> { [ parenleft,  braceleft,  guillemotleft, leftdoublequotemark ] };
+    key <AE12> { [parenright, braceright, guillemotright, rightdoublequotemark ] };
+
+
+    //Widely Alternating-A5 (comma-preserving)
+
+    key <AD01> { [         minus, exclam, Delete, Delete ] };   
+    key <AD02> { [         c,       C,      Up,       asciitilde ] };
+    key <AD03> { [         l,    L, BackSpace,       BackSpace ] };
+    key <AD04> { [	   w,          W,    parenleft,         asciicircum ] };
+    key <AD05> { [	   b,          B,    grave, grave ] };
+    key <AD06> { [	   z,	Z		]	};
+    // key <AD07> { [	   semicolon,	colon		]	};
+    key <AD07> { [	   j,	J		]	};
+    key <AD08> { [	   f,          F,     copyright,             cent ] };  
+    key <AD09> { [	   o,          O,    dollar,           dollar ] }; 
+    key <AD10> { [	   u,          U,        at,       at ] };
+    key <AD11> { [         apostrophe,   underscore,  questiondown,        dead_hook ] };
+    key <AD12> { [     quotedbl,       backslash,      multiply,         division ] };
+    key <BKSL> { [    ampersand,          grave,      asciitilde,       asciitilde ] };
+
+
+    key <AC01> { [	   r,          R,        Left,           Aacute ] };
+    key <AC02> { [	   s,          S,        Down,            bracketleft ] };
+    key <AC03> { [	   n,          N,        Right,      bracketright ] };
+    key <AC04> { [	   t,          T,        Escape  , Escape ] };
+    key <AC05> { [         g,          G,        parenright , Return ] };
+    key <AC06> { [	   q,          Q,           equal,       percent ] };
+    key <AC07> { [	   y,	       Y,        ampersand,   asciitilde		]	};
+    key <AC08> { [	   h,          H,         equal,       percent ] };
+    key <AC09> { [	   e,          E,        minus,       numbersign ] };
+    key <AC10> { [	   i,          I,        plus,        asterisk ] };
+    key <AC11> { [         a,          A,           underscore,        asciicircum ] };
+
+    // key <AB01> { [	   j,          J,    slash,               slash ] };
+    key <AB01> { [	   semicolon,	colon,    slash,               slash ] };
+    key <AB02> { [	   x,	       X,         backslash,       asciitilde		]	};
+    key <AB03> { [	   m,          M,            ae,               AE ] }; 
+    key <AB04> { [	   d,          D,            braceleft,        braceleft ] };
+    key <AB05> { [	   v,	       V,            braceright,       braceright		]	};
+    key <AB06> { [         slash,      question,     paragraph,           degree ] };  //original slash question position
+    key <AB07> { [	   p,          P,         aring,            Aring ] };
+    key <AB08> { [	   k,          K,            mu,               mu ] };
+    key <AB09> { [	   comma,	numbersign		]	};    //original
+    key <AB10> { [	   period,	percent		]	};
+
+};
