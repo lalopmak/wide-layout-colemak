@@ -65,7 +65,10 @@ xkb_symbols "dvorak-l" {
     key <AC02> { [	   s,          S,        Down,            bracketleft ] };
     key <AC03> { [	   n,          N,        Right,      bracketright ] };
     key <AC04> { [	   t,          T,        Escape  , Escape ] };
-    key <AC05> { [         g,          G,        parenright , Return ] };
+
+    // key <AC05> { [         g,          G,        parenright , Return ] };
+    key <AC05> { [         d,          D,        parenright , Return ] };
+
     key <AC06> { [	   q,          Q,           equal,       percent ] };
     key <AC07> { [	   y,	       Y,        ampersand,   asciitilde		]	};
     key <AC08> { [	   h,          H,         equal,       percent ] };
@@ -77,7 +80,10 @@ xkb_symbols "dvorak-l" {
     key <AB01> { [	   semicolon,	colon,    slash,               slash ] };
     key <AB02> { [	   x,	       X,         backslash,       asciitilde		]	};
     key <AB03> { [	   m,          M,            ae,               AE ] }; 
-    key <AB04> { [	   d,          D,            braceleft,        braceleft ] };
+
+    // key <AB04> { [	   d,          D,            braceleft,        braceleft ] };
+    key <AB04> { [	   g,          G,            braceleft,        braceleft ] };
+
     key <AB05> { [	   v,	       V,            braceright,       braceright		]	};
     key <AB06> { [         slash,      question,     paragraph,           degree ] };  //original slash question position
     key <AB07> { [	   p,          P,         aring,            Aring ] };

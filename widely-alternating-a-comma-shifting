@@ -55,7 +55,10 @@ xkb_symbols "dvorak-r" {
     key <AC01> { [	   r,          R,        aacute,           Aacute ] };
     key <AC02> { [	   s,          S,        oacute,           Oacute ] };
     key <AC03> { [	   n,          N,        eacute,           Eacute ] };
-    key <AC05> { [         g,          G,        iacute,           Iacute ] };
+
+    // key <AC05> { [         g,          G,        iacute,           Iacute ] };
+    key <AC05> { [         d,          D,        iacute,           Iacute ] };
+
     key <AD02> { [         c,       C,      ccedilla,         Ccedilla ] };
     key <AD03> { [         l,    L, dead_abovedot,       dead_caron ] };
     key <AB03> { [	   m,          M,            ae,               AE ] }; 
@@ -90,7 +93,10 @@ xkb_symbols "dvorak-r" {
 
     key <AB01> { [	   semicolon,	colon,    adiaeresis,       Adiaeresis ] };
     key <AB02> { [	   x,	       X		]	};
-    key <AB04> { [	   d,          D,            oe,               OE ] };
+
+    // key <AB04> { [	   d,          D,            oe,               OE ] };
+    key <AB04> { [	   g,          G,            oe,               OE ] };
+
     key <AB05> { [	   v,	       V		]	};
     // key <AB06> { [         slash,      question,     paragraph,           degree ] };  //original slash question position
     key <AB06> { [         k,              K,     paragraph,           degree ] };    //original slash question position
