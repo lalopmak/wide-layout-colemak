@@ -668,7 +668,7 @@ xkb_symbols "dvorak-r" {
     key <AD06> { [	   z,	Z		]	};
 
     // key <AD07> { [	   k,	K		]	};                        //original k position
-    key <AD07> { [	   semicolon,	colon		]	};                       //original k position
+    key <AD07> { [	   j, J		]	};                       //original k position
 
     key <AD08> { [	   f,          F,     copyright,             cent ] };  
     key <AD09> { [	   o,          O,    registered,       registered ] }; 
@@ -690,7 +690,7 @@ xkb_symbols "dvorak-r" {
     key <AC10> { [	   i,          I,        ssharp,          section ] };
     key <AC11> { [         a,          A,           yen,    dead_belowdot ] };
 
-    key <AB01> { [	   j,          J,    adiaeresis,       Adiaeresis ] };
+    key <AB01> { [	   semicolon,	colon,    adiaeresis,       Adiaeresis ] };
     key <AB02> { [	   x,	       X		]	};
     key <AB04> { [	   d,          D,            oe,               OE ] };
     key <AB05> { [	   v,	       V		]	};
