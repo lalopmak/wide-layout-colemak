@@ -513,14 +513,14 @@ xkb_symbols "dvorak-l" {
     include "us(dvorak)"
     name[Group1]= "English (left handed Dvorak)";
 
-    key <TLDE> { [asciitilde, less,         grave,       asciitilde ] };
+    key <TLDE> { [asciitilde, asciicircum,         grave,       asciitilde ] };
 
-    key <AE01> { [	   1,     asterisk,    exclamdown,      onesuperior ] };
-    key <AE02> { [	   2,         bracketleft,   twosuperior, dead_doubleacute ] };
-    key <AE03> { [	   3, bracketright, threesuperior,      dead_macron ] };
-    key <AE04> { [	   4,     dollar,      currency,         sterling ] };
-    key <AE05> { [	   5,    greater,      EuroSign,     dead_cedilla ] };
-    key <AE06> { [    6, asciicircum,    onequarter,      asciicircum ] };
+    key <AE01> { [	   1,              bracketleft,    exclamdown,      onesuperior ] };
+    key <AE02> { [	   z, Z,   twosuperior, dead_doubleacute ] };
+    key <AE03> { [	   q, Q, threesuperior,      dead_macron ] };
+    key <AE04> { [	   2, bracketright,   twosuperior, dead_doubleacute ] };
+    key <AE05> { [	   3, asterisk, threesuperior,      dead_macron ] };
+    key <AE06> { [	   4,     dollar,      currency,         sterling ] };
     key <AE07> { [	   7,  bar,       onehalf,	dead_horn ] };
     key <AE08> { [	   8,   at, threequarters,      dead_ogonek ] };
     key <AE09> { [	   9,  plus, leftsinglequotemark, dead_breve ] };
@@ -529,15 +529,30 @@ xkb_symbols "dvorak-l" {
     key <AE12> { [parenright, braceright, guillemotright, rightdoublequotemark ] };
 
 
-    //Widely Alternating-A5 (comma-preserving)
+    //Widely Alternating-A7 (comma-preserving)
 
+    //Widely Alternating A-W (variant more faithful to workman)
+    // key <AD04> { [	   w,          W,    parenleft,         asciicircum ] };
+    // key <AC05> { [         g,          G,        parenright , Return ] };
+    // key <AB03> { [	   m,          M,            ae,               AE ] }; 
+    // key <AB04> { [	   d,          D,            braceleft,        braceleft ] };
+
+    //Base variant
+    key <AD04> { [	   m,          M,    parenleft,         asciicircum ] };
+    key <AC05> { [         d,          D,        parenright , Return ] };
+    key <AB03> { [	   w,          W,            ae,               AE ] }; 
+    key <AB04> { [	   g,          G,            braceleft,        braceleft ] };
+
+
+    //Common keys
+
+    //top row
     key <AD01> { [         minus, exclam, Delete, Delete ] };   
     key <AD02> { [         c,       C,      Up,       asciitilde ] };
     key <AD03> { [         l,    L, BackSpace,       BackSpace ] };
-    key <AD04> { [	   w,          W,    parenleft,         asciicircum ] };
+
     key <AD05> { [	   b,          B,    grave, grave ] };
-    key <AD06> { [	   z,	Z		]	};
-    // key <AD07> { [	   semicolon,	colon		]	};
+    key <AD06> { [	   5,	less		]	};
     key <AD07> { [	   j,	J		]	};
     key <AD08> { [	   f,          F,     copyright,             cent ] };  
     key <AD09> { [	   o,          O,    dollar,           dollar ] }; 
@@ -546,29 +561,22 @@ xkb_symbols "dvorak-l" {
     key <AD12> { [     quotedbl,       backslash,      multiply,         division ] };
     key <BKSL> { [    ampersand,          grave,      asciitilde,       asciitilde ] };
 
-
+    //second row
     key <AC01> { [	   r,          R,        Left,           Aacute ] };
     key <AC02> { [	   s,          S,        Down,            bracketleft ] };
     key <AC03> { [	   n,          N,        Right,      bracketright ] };
     key <AC04> { [	   t,          T,        Escape  , Escape ] };
 
-    // key <AC05> { [         g,          G,        parenright , Return ] };
-    key <AC05> { [         d,          D,        parenright , Return ] };
-
-    key <AC06> { [	   q,          Q,           equal,       percent ] };
+    key <AC06> { [	   6,          greater,           equal,       percent ] };
     key <AC07> { [	   y,	       Y,        ampersand,   asciitilde		]	};
     key <AC08> { [	   h,          H,         equal,       percent ] };
     key <AC09> { [	   e,          E,        minus,       numbersign ] };
     key <AC10> { [	   i,          I,        plus,        asterisk ] };
     key <AC11> { [         a,          A,           underscore,        asciicircum ] };
 
-    // key <AB01> { [	   j,          J,    slash,               slash ] };
+    //bottom row
     key <AB01> { [	   semicolon,	colon,    slash,               slash ] };
     key <AB02> { [	   x,	       X,         backslash,       asciitilde		]	};
-    key <AB03> { [	   m,          M,            ae,               AE ] }; 
-
-    // key <AB04> { [	   d,          D,            braceleft,        braceleft ] };
-    key <AB04> { [	   g,          G,            braceleft,        braceleft ] };
 
     key <AB05> { [	   v,	       V,            braceright,       braceright		]	};
     key <AB06> { [         slash,      question,     paragraph,           degree ] };  //original slash question position
