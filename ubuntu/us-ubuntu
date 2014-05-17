@@ -96,11 +96,11 @@ xkb_symbols "intl" {
     key <AE12> { [        equal,         plus,        multiply,         division ] };
 
     //first row
-    key <AD01> { [            q,            Q,      apostrophe,       quotedbl ] };
+    key <AD01> { [            q,            Q,      Delete, Delete ] };
     key <AD02> { [            w,            W,           Up,       asciitilde  ] };
     key <AD03> { [            f,            F,           BackSpace,       BackSpace ] };
-    key <AD04> { [            p,            P,          Delete, Delete ] };
-    key <AD05> { [            g,            G,     dead_ogonek,       asciitilde ] };
+    key <AD04> { [            p,            P,          parenleft,         asciicircum ] };
+    key <AD05> { [            g,            G,     grave, grave ] };
     key <AD06> { [            j,            J,         dstroke,          Dstroke ] };
     key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
     key <AD08> { [            u,            U,          uacute,           Up ] };
@@ -114,21 +114,21 @@ xkb_symbols "intl" {
     key <AC01> { [            a,            A,          Left,           Aacute ] };
     key <AC02> { [            r,            R,       Down,            bracketleft ] };
     key <AC03> { [            s,            S,          Right,      bracketright  ] };
-    key <AC04> { [            t,            T,        Return, Return ] };
-    key <AC05> { [            d,            D,  Delete,       asciitilde ] };
-    key <AC06> { [            h,            H,      space,           space ] };
-    key <AC07> { [            n,            N,      minus,       asterisk    ] };
-    key <AC08> { [            e,            E,      exclam,           Down      ] };
-    key <AC09> { [            i,            I,      question,           ampersand      ] };
-    key <AC10> { [            o,            O,      plus,       equal    ] };
+    key <AC04> { [            t,            T,        Escape  , Escape ] };
+    key <AC05> { [            d,            D,  parenright,       asciitilde ] };
+    key <AC06> { [            h,            H,      ampersand,   asciitilde ] };
+    key <AC07> { [            n,            N,      equal,       percent    ] };
+    key <AC08> { [            e,            E,      minus,       numbersign      ] };
+    key <AC09> { [            i,            I,      plus,        asterisk      ] };
+    key <AC10> { [            o,            O,      underscore,        asciicircum    ] };
     key <AC11> { [            apostrophe,   quotedbl,  otilde,           Otilde ] };
 
     //third row
     key <AB01> { [            z,            Z,              slash,               slash ] };
     key <AB02> { [            x,            X, backslash,       asciitilde ] };
     key <AB03> { [            c,            C,        parenleft,         braceleft ] };
-    key <AB04> { [            v,            V,              parenright,               braceright ] };
-    key <AB05> { [            b,            B,      dead_breve,       asciitilde ] };
+    key <AB04> { [            v,            V,              braceleft,        braceleft ] };
+    key <AB05> { [            b,            B,      braceright,       braceright ] };
     key <AB06> { [            k,            K,  dead_abovering,       asciitilde ] };
     key <AB07> { [            m,            M,     dead_macron,       asciitilde ] };
     key <AB08> { [        comma,         less,    dead_cedilla,       asciitilde ] };
@@ -478,28 +478,70 @@ xkb_symbols "dvorak-alt-intl" {
 
     name[Group1]= "English (Dvorak alternative international no dead keys)";
 
-    include "us(dvorak)"
+    include "us"
 
-    key <AE04> { [         4,  dollar,    EuroSign ] };
+    // Alphanumeric section
+    key <TLDE> { [        grave,   asciitilde,      dead_tilde,       asciitilde ] };
+    key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
+    key <AE02> { [            2,           at,       masculine,      twosuperior ] };
+    key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
+    key <AE04> { [            4,       dollar,            cent,         sterling ] };
+    key <AE05> { [            5,      percent,        EuroSign,              yen ] };
+    key <AE06> { [            6,  asciicircum,         hstroke,          Hstroke ] };
+    key <AE07> { [            7,    ampersand,             eth,              ETH ] };
+    key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
+    key <AE09> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [            0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
+    key <AE11> { [        minus,   underscore,          endash,           emdash ] };
+    key <AE12> { [        equal,         plus,        multiply,         division ] };
 
-    key <AD02> { [     comma,    less,  adiaeresis,       dead_caron ] };
-    key <AD03> { [    period, greater, ecircumflex,   periodcentered	] };
-    key <AD04> { [         p,       P,  ediaeresis,     dead_cedilla ] };
-    key <AD05> { [         y,       Y,  udiaeresis ] };
-    key <AD08> { [         c,       C,    ccedilla,    dead_abovedot ] };
+    //first row
+    key <AD01> { [            q,            Q,      Delete, Delete ] };
+    key <AD02> { [            w,            W,           Up,       asciitilde  ] };
+    key <AD03> { [            f,            F,           BackSpace,       BackSpace ] };
+    key <AD04> { [            p,            P,          parenleft,         asciicircum ] };
+    key <AD05> { [            g,            G,     grave, grave ] };
+    key <AD06> { [            j,            J,         dstroke,          Dstroke ] };
+    key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
+    key <AD08> { [            u,            U,          uacute,           Up ] };
+    key <AD09> { [            y,            Y,      Return,       Return ] };
+    key <AD10> { [    semicolon,        colon,      apostrophe,           quotedbl ] };
+    key <AD11> { [  bracketleft,     braceleft,   bracketleft,        braceleft ] };
+    key <AD12> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+    key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] };
 
-    key <AC01> { [         a,       A,      agrave ] };
-    key <AC02> { [         o,       O, ocircumflex ] };
-    key <AC03> { [         e,       E,      eacute ] };
-    key <AC04> { [         u,       U, ucircumflex ] };
-    key <AC05> { [         i,       I, icircumflex ] };
-    key <AC10> { [         s,       S,      ssharp ] };
+    //second row
+    key <AC01> { [            a,            A,          Left,           Aacute ] };
+    key <AC02> { [            r,            R,       Down,            bracketleft ] };
+    key <AC03> { [            s,            S,          Right,      bracketright  ] };
+    key <AC04> { [            t,            T,        Escape  , Escape ] };
+    key <AC05> { [            d,            D,  parenright,       asciitilde ] };
+    key <AC06> { [            h,            H,      ampersand,   asciitilde ] };
+    key <AC07> { [            n,            N,      equal,       percent    ] };
+    key <AC08> { [            e,            E,      minus,       numbersign      ] };
+    key <AC09> { [            i,            I,      plus,        asterisk      ] };
+    key <AC10> { [            o,            O,      underscore,        asciicircum    ] };
+    key <AC11> { [            apostrophe,   quotedbl,  otilde,           Otilde ] };
 
-    key <AB01> { [ semicolon,   colon, acircumflex ] };
-    key <AB02> { [         q,       Q,  odiaeresis,      dead_ogonek ] };
-    key <AB03> { [         j,       J,      egrave, dead_doubleacute ] };
-    key <AB04> { [         k,       K,      ugrave ] };
-    key <AB05> { [         x,       X,  idiaeresis ] };
+    //third row
+    key <AB01> { [            z,            Z,              slash,               slash ] };
+    key <AB02> { [            x,            X, backslash,       asciitilde ] };
+    key <AB03> { [            c,            C,        parenleft,         braceleft ] };
+    key <AB04> { [            v,            V,              braceleft,        braceleft ] };
+    key <AB05> { [            b,            B,      braceright,       braceright ] };
+    key <AB06> { [            k,            K,  dead_abovering,       asciitilde ] };
+    key <AB07> { [            m,            M,     dead_macron,       asciitilde ] };
+    key <AB08> { [        comma,         less,    dead_cedilla,       asciitilde ] };
+    key <AB09> { [       period,      greater,   dead_abovedot,       asciitilde ] };
+    key <AB10> { [        slash,     question,    questiondown,       asciitilde ] };
+
+    key <LSGT> { [        minus,   underscore,          endash,           emdash ] };
+    key <SPCE> { [        space,        space,           space,     nobreakspace ] };
+
+
+    //key <ESC> { [     CapsLock,     CapsLock,        CapsLock,         CapsLock ] };
+    //key <CAPS> { [    Control_L,    Control_L,       Control_L,        Control_L ] };
+    //key <LCTL> { [    Escape,       Escape,          Control_L,           Escape ] };
 
     include "level3(ralt_switch)"
 };
